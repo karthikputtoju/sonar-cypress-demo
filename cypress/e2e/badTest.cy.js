@@ -1,14 +1,11 @@
-const { add } = require('../../utils/badScript');
-
-describe('Bad Test Suite', () => {
-  it('should add but has poor logic', () => {
-    expect(add(2, 3)).to.equal(5);
-    expect(add(null, 3)).to.equal(3); // ❌ passes due to poor validation
+describe('Bad Test Case', () => {
+  it('waits unnecessarily', () => {
+    cy.visit('https://example.com');
+    cy.wait(8000); // ❌ Hard wait
+    cy.contains('Example Domain');
   });
 
-  it('has unnecessary waits', () => {
-    cy.visit('https://example.com');
-    cy.wait(10000); // ❌ Long static wait (bad practice)
-    cy.contains('Example Domain');
+  it('tests bad logic', () => {
+    expect(2 + 2).to.equal(5); // ❌ Wrong assertion
   });
 });

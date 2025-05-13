@@ -1,0 +1,6 @@
+projectKey=sonar-cypress-demo
+serverUrl=http://localhost:9000
+serverVersion=25.5.0.107428
+dashboardUrl=http://localhost:9000/dashboard?id=sonar-cypress-demo
+ceTaskId=787b51da-c3f1-4cb8-b3e3-6f7ca1389996
+ceTaskUrl=http://localhost:9000/api/ce/task?id=787b51da-c3f1-4cb8-b3e3-6f7ca1389996
